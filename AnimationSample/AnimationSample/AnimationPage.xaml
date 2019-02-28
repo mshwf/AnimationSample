@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimationSample.AnimationPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Fade Box 1" Clicked="FadeB1_Clicked"/>
+            <Button Text="Animate Height of Box 2" Clicked="AniomateHeightB2_Clicked"/>
+        </StackLayout>
+        <StackLayout x:Name="box1" BackgroundColor="Green" WidthRequest="150" HeightRequest="150">
+            <Label Text="Box1" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="box2" BackgroundColor="Orange" WidthRequest="150" HeightRequest="150">
+            <Label Text="Box2" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
